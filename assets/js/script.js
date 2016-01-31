@@ -39,14 +39,13 @@ var imageCount = caption.length;
 var counter = Math.floor(Math.random() * imageCount);;
 
 $( document ).ready(function() {    
-
 	$('.loading').hide();
     // Preload images
     for (i = 1; i <= imageCount; i++) {
     	preloadImg('assets/images/pipe-' + i + '.jpg')
     	console.log('preloaded pipe ' + i)
     }
-    $('.introduction-text').delay( 100 ).fadeIn(2000);
+    $('.introduction-text').delay( 200 ).fadeIn(2000);
 });
 
 $('.introduction-close').click(function() {
