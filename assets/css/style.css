@@ -3,6 +3,11 @@
   src: url(../fonts/FolioStd-Medium.otf) format('opentype');
 }
 
+@font-face {
+  font-family: OCRB;
+  src: url(../fonts/OCRBStd.otf) format('opentype');
+}
+
 body {
     /*margin: 0;*/
     min-width: 900px;
@@ -79,7 +84,7 @@ body {
 }
 
 .header {
-    font-family:'OCR B W01 Regular';
+    font-family: OCRB;
     color: #888;
     font-size: 10px;
     text-transform: uppercase;
