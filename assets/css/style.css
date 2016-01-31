@@ -16,6 +16,7 @@ body {
     min-width: 900px;
     margin: 0 !important;
     padding: 0 !important;
+    -webkit-font-smoothing: antialiased;
 }
 
 .aboutbox {
@@ -29,10 +30,24 @@ body {
     z-index: 200;
     padding: 35px 50px 10px 40px;
      font-size: 18px;
-    /*line-height: 50px;*/
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-weight: 500;
+    line-height: 25px;
+    font-family: Arial, helvetica, arial, sans-serif;
+    font-weight: normal;
+}
 
+.imagecaption {
+    font-family: Roboto Mono;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.aboutbox a {
+    color: #404040;
+}
+
+.aboutbox a:hover {
+    color: #de1224;
 }
 
 .header.about {
@@ -84,9 +99,8 @@ body {
     width: 850px;
     font-size: 50px;
     line-height: 55px;
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
+    font-family: Arial, helvetica, arial, sans-serif;
+    font-weight: normal;
 }
 
 .header {
@@ -189,8 +203,8 @@ body {
     float: left;
     margin: 0 0 0 20px;
     line-height: 100px;
-    font-family: Roboto, helvetica, arial, sans-serif;
-    font-weight: 500;
+    font-family: Arial, helvetica, arial, sans-serif;
+    font-weight: normal;
     font-size: 40px;
     color: #fff;
 }

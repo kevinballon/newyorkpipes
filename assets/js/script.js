@@ -39,7 +39,7 @@ var imageCount = caption.length;
 var counter = Math.floor(Math.random() * imageCount);;
 
 $( document ).ready(function() {    
-	$('.loading').delay(100).fadeOut(2000)
+	$('.loading').fadeOut(1000)
     // Preload images
     for (i = 1; i <= imageCount; i++) {
     	preloadImg('assets/images/pipe-' + i + '.jpg')
