@@ -56,13 +56,10 @@ $( document ).ready(function() {
 	    $('.next').html('&rarr;');
 	    $('.previous').html('&larr;');
 	    hover = true;
-	    $('.index').hide();
-	    $('.body').css('height', '120%');
-	  
+	    $('.index').hide();	  
 	    $('.navigation').hide();
 	    $('.header').hide();
 	    $('.viewer').css("background-size", "contain");
-	    $('.viewer').css("top", "100px");
 	    $('.viewer').css("background-position", "center");
 	    $('.viewer-next').hide();
 	    $('.viewer-previous').hide();
@@ -82,6 +79,8 @@ $( document ).ready(function() {
 		  counter++;
 		  updateImage();
 		});
+		$('.body').css('height', '150%');
+		window.scrollTo(0, 1); 
     }
 
 });
