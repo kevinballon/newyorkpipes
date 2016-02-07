@@ -51,9 +51,6 @@ $( document ).ready(function() {
     }
 
     if (is_mobile == true) {
-
-
-
 		$('.introduction').hide();
     	updateImage();
 	    $('.next').html('&rarr;');
@@ -64,16 +61,13 @@ $( document ).ready(function() {
 	    $('.viewer-next').hide();
 	    $('.viewer-previous').hide();
 
-		$(".viewer").on("swiperight",function(e){
-		  counter++;
-		  updateImage();
-		});
-
-		setTimeout(function () {   window.scrollTo(0, 1); }, 1000);
     }
 
 });
 
+$('.mobile-close').click(function() {
+	$('.mobile').hide();
+});
 
 $('.introduction-close').click(function() {
 	$('.introduction').hide();
@@ -99,7 +93,7 @@ $('.about').click(function() {
 });
 
 $('.next, .previous').hover( function() {
-		if (hover == true && hover == false && is_mobile == false) {
+		if (hover == true && is_mobile == false) {
 			$(this).addClass('hover');
 		}	
 	}, function() {
