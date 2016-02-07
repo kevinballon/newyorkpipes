@@ -1,3 +1,5 @@
+
+
 @font-family: 'Roboto Mono';
 @font-family: 'Roboto', sans-serif;
 
@@ -268,3 +270,10 @@ input::-webkit-inner-spin-button {
 }
 
     /*content: url(../images/pipe-1.jpg) url(../images/pipe-2.jpg) url(../images/pipe-3.jpg) url(../images/pipe-4.jpg);*/
+
+
+@media only screen and (min-width: 800px) {
+    .introduction {
+        display: none;
+    }
+}
