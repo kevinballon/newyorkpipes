@@ -58,6 +58,7 @@ $( document ).ready(function() {
 	    hover = true;
 
 	    $('.index').hide();
+	    $('.wrapper').css('height', '110%');
 	    $('.navigation').hide();
 	    $('.viewer-next').hide();
 	    $('.viewer-previous').hide();
