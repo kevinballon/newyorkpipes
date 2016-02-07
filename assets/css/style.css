@@ -276,12 +276,12 @@ input::-webkit-inner-spin-button {
     /*content: url(../images/pipe-1.jpg) url(../images/pipe-2.jpg) url(../images/pipe-3.jpg) url(../images/pipe-4.jpg);*/
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1000px) {
     .introduction {
         display: none;
     }
         .mobile {
-            display: block;
+        display: block;
         padding: 70px;
         position: absolute;
         box-sizing: border-box;
