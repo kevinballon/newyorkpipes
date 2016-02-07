@@ -56,10 +56,14 @@ $( document ).ready(function() {
 	    $('.next').html('&rarr;');
 	    $('.previous').html('&larr;');
 	    hover = true;
-
 	    $('.index').hide();
-	    $('.body').css('height', '110%');
+	    $('.body').css('height', '120%');
+	  
 	    $('.navigation').hide();
+	    $('.header').hide();
+	    $('.viewer').css("background-size", "contain");
+	    $('.viewer').css("top", "100px");
+	    $('.viewer').css("background-position", "center");
 	    $('.viewer-next').hide();
 	    $('.viewer-previous').hide();
 	    $('.caption').css({"text-align":"center","float":"none","display":"block"});
@@ -78,8 +82,6 @@ $( document ).ready(function() {
 		  counter++;
 		  updateImage();
 		});
-
-
     }
 
 });
