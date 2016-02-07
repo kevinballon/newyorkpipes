@@ -51,37 +51,6 @@ $( document ).ready(function() {
     }
 
     if (is_mobile == true) {
-  //   	$('.introduction').hide();
-  //   	updateImage();
-	 //    $('.next').html('&rarr;');
-	 //    $('.previous').html('&larr;');
-	 //    hover = true;
-	 //    $('.index').hide();	  
-	 //    $('.navigation').hide();
-	 //    $('.header').hide();
-	 //    $('.viewer').css("background-size", "contain");
-	 //    $('.viewer').css("background-position", "center");
-	 //    $('.viewer-next').hide();
-	 //    $('.viewer-previous').hide();
-	 //    $('.caption').css({"text-align":"center","float":"none","display":"block"});
-
-		// $(".viewer").on("swipeleft",function(){
-		//   counter--;
-		//   updateImage();
-		// });
-
-		// $(".viewer").on("swiperight",function(){
-		//   counter++;
-		//   updateImage();
-		// });
-
-		// $(".viewer").click(function(){
-		//   counter++;
-		//   updateImage();
-		// });
-		// $('.body').css('height', '150%');
-		// window.scrollTo(0, 1); 
-
 
 
 
@@ -92,14 +61,15 @@ $( document ).ready(function() {
 	    hover = true;
 	    $('.viewer').css("background-size", "contain");
 	    $('.viewer').css("background-position", "center");
+	    $('.viewer-next').hide();
+	    $('.viewer-previous').hide();
 
 		$(".viewer").on("swiperight",function(e){
 		  counter++;
 		  updateImage();
 		});
 
-		$('.body').css('height', '150%');
-		window.scrollTo(0, 1); 
+		setTimeout(function () {   window.scrollTo(0, 1); }, 1000);
     }
 
 });
@@ -129,7 +99,7 @@ $('.about').click(function() {
 });
 
 $('.next, .previous').hover( function() {
-		if (hover == true) {
+		if (hover == true && hover == false && is_mobile == false) {
 			$(this).addClass('hover');
 		}	
 	}, function() {
