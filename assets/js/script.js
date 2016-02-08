@@ -113,7 +113,7 @@ $('.index').hover( function() {
 );
 
 $('.next, .viewer-next').click(function() {
-	if ( introduction = false) {
+	if ( introduction == false ) {
 		counter++
 		updateImage();
 	}
@@ -121,7 +121,7 @@ $('.next, .viewer-next').click(function() {
 });
 
 $('.previous, .viewer-previous').click(function() {	
-	if (introduction = false) {
+	if (introduction == false) {
 		counter--;
 		updateImage();
 	}
