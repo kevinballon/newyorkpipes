@@ -298,4 +298,8 @@ input::-webkit-inner-spin-button {
         border-bottom: 1px solid white;
     }
 
+    .gray {
+        color: #888;
+    }
+
 }
