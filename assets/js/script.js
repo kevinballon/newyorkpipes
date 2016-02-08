@@ -36,6 +36,7 @@ var caption =
 ];
 
 var imageCount = caption.length;
+var introduction = true;
 var is_mobile = false;
 var counter = Math.floor(Math.random() * imageCount);;
 
@@ -60,7 +61,6 @@ $( document ).ready(function() {
 	    $('.viewer').css("background-position", "center");
 	    $('.viewer-next').hide();
 	    $('.viewer-previous').hide();
-
     }
 
 });
@@ -70,6 +70,7 @@ $('.mobile-close').click(function() {
 });
 
 $('.introduction-close').click(function() {
+	introduction = false;
 	$('.introduction').hide();
     updateImage();
     $('.next').html('&rarr;');
@@ -112,13 +113,18 @@ $('.index').hover( function() {
 );
 
 $('.next, .viewer-next').click(function() {
-	counter++
-	updateImage();
+	if ( introduction = false) {
+		counter++
+		updateImage();
+	}
+	
 });
 
 $('.previous, .viewer-previous').click(function() {	
-	counter--;
-	updateImage();
+	if (introduction = false) {
+		counter--;
+		updateImage();
+	}
 });
 
 $('.index').change(function() {
