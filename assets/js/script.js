@@ -50,6 +50,7 @@ $( document ).ready(function() {
     	preloadImg('assets/images/pipe-' + i + '.jpg')
     	console.log('preloaded pipe ' + i)
     }
+    $("input").prop('disabled', true);
 
     if (is_mobile == true) {
 		$('.introduction').hide();
@@ -67,6 +68,7 @@ $( document ).ready(function() {
 
 $('.mobile-close').click(function() {
 	$('.mobile').hide();
+	$("input").prop('disabled', false);
 });
 
 $('.introduction-close').click(function() {
@@ -75,6 +77,7 @@ $('.introduction-close').click(function() {
     updateImage();
     $('.next').html('&rarr;');
     $('.previous').html('&larr;');
+    $("input").prop('disabled', false);
     hover = true;
 });
 
